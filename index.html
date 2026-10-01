@@ -2149,6 +2149,7 @@ a.press-card:hover { transform: translateY(-3px); box-shadow: 5px 7px 0 var(--vi
 .pdf-btn {
   margin-top: 30px;
   display: inline-flex;
+  text-decoration: none;
   flex-direction: column;
   align-items: flex-start;
   gap: 2px;
@@ -3561,7 +3562,7 @@ a.press-card:hover { transform: translateY(-3px); box-shadow: 5px 7px 0 var(--vi
 
       <!-- ligne « caméra des vidéodredis » retirée à la relecture (à valider : plutôt à retirer) -->
 
-      <button class="pdf-btn" id="pdfBtn">⤓ Télécharger en PDF <small>version bailleuses de fonds</small></button>
+      <a class="pdf-btn" id="pdfBtn" href="visuels/rapport-annuel-anim-2025-2026.pdf" download="Rapport annuel ANIM 2025-2026.pdf">⤓ Télécharger en PDF <small>version bailleuses de fonds · 30 pages</small></a>
     </div>
   </div>
   <button class="continuer-btn" data-next="generique">Continuer →</button>
@@ -5460,11 +5461,7 @@ var MEMBRES = [
 })();
 
 
-/* ---- bouton PDF (bailleuses de fonds) ---- */
-(function () {
-  var btn = document.getElementById('pdfBtn');
-  if (btn) btn.addEventListener('click', function () { window.print(); });
-})();
+/* ---- bouton PDF : lien direct vers le document (visuels/rapport-annuel-anim-2025-2026.pdf) ---- */
 
 
 /* ---- manifestation : ça défile pour le financement ---- */
